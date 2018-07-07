@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body>
+<h2> Fill the details</h2>
+<form action='MainServlet' method='post'>
+<div Class="center">
+<table>
+ <tr><td>Database:<br>
+  <input type="radio" name="database" value="oracle" checked> oracle<br>
+  <input type="radio" name="database" value="MySql"> MySql<br>
+  <input type="radio" name="database" value="SqlServer"> SqlServer<br></td></tr>
+<tr><td> File Location:  <input type="text" name="location"/><br><br></td></tr>
+ <tr><td>File Name:      <input type="text" name="name"/><br><br></td></tr>
+ <tr><td>File extention: <input type="text" name="extention"/> <br><br></td></tr>
+<tr><td> Rejection Level: <br>
+ <input type="radio" name="rejection" value="r" checked>R<br>
+ 				  <input type="radio" name="rejection" value="f">F<br></td></tr>
+ <tr><td><input type="submit" value="Enter"/></td></tr>
+ 
+ </table>
+ </div>
+  </form>
+</body>
+</html>
